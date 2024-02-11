@@ -1,0 +1,20 @@
+#c_tool_bar {
+  padding: 15px 15px;
+  background: #16172b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  .tool_button {
+    color: #a2a4bd;
+    font-size: 30px;
+
+    &:hover {
+      color: aliceblue;
+      cursor: pointer;
+    }
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+}

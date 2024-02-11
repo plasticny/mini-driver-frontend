@@ -1,0 +1,114 @@
+#c_file_list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: genseki;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: whitesmoke;
+}
+@font-face {
+  font-family: genseki;
+  src: url("@/assets/font/genseki.ttf");
+}
+#c_file_list #header {
+  padding-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+#c_file_list #header #folder_nm {
+  font-size: 20px;
+  margin-right: 10px;
+  user-select: none;
+}
+#c_file_list #header #folder_nm .folder_nm_item {
+  cursor: pointer;
+}
+#c_file_list #header #folder_nm .folder_nm_item:hover {
+  text-decoration: underline;
+}
+#c_file_list #header #folder_nm .spliter {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#c_file_list #header #file_operation {
+  background-color: #2d0516;
+  color: white;
+  margin-left: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  user-select: none;
+}
+#c_file_list #header #file_operation *:not(:last-child) {
+  margin-right: 15px;
+}
+#c_file_list #header #file_operation svg {
+  cursor: pointer;
+}
+#c_file_list #file_drop_area {
+  border-radius: 10px;
+  background-color: white;
+  height: calc(100% - 110px);
+  padding: 10px;
+}
+#c_file_list .file_obj {
+  background: white;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding: 15px;
+}
+#c_file_list .file_obj div:first-child {
+  width: 30px;
+}
+#c_file_list .file_obj .icon_using {
+  margin-right: 10px;
+}
+#c_file_list .file_obj .file_name {
+  width: 100%;
+  text-align: start;
+  user-select: none;
+}
+#c_file_list .file_obj:first-child {
+  border-top: 1px solid grey;
+}
+#c_file_list .file_obj.selected {
+  background-color: #fdd4a5;
+}
+#c_file_list .file_obj:hover:not(.selected) {
+  background-color: #efdecb;
+}
+#c_file_list .file_obj.uploading .icon_uploading {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#c_file_list .file_obj.uploading .icon_cancel {
+  display: none;
+  cursor: pointer;
+}
+#c_file_list .file_obj.uploading .file_name {
+  opacity: 0.5;
+}
+#c_file_list .file_obj.uploading progress {
+  width: 50px;
+  margin-right: 10px;
+}
+#c_file_list .file_obj.uploading:hover .icon_uploading {
+  display: none;
+}
+#c_file_list .file_obj.uploading:hover .icon_cancel {
+  display: block;
+}
+
+/*# sourceMappingURL=FileList.css.map */

@@ -1,0 +1,20 @@
+#c_tool_bar {
+  padding: 15px 15px;
+  background: #16172b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#c_tool_bar .tool_button {
+  color: #a2a4bd;
+  font-size: 30px;
+}
+#c_tool_bar .tool_button:hover {
+  color: aliceblue;
+  cursor: pointer;
+}
+#c_tool_bar .tool_button:not(:first-child) {
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=ToolBar.css.map */

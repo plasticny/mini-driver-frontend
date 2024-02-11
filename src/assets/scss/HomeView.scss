@@ -1,0 +1,33 @@
+#home {
+  height: 100%;
+  display: flex;
+}
+
+#c_file_list {
+  width: 100%;
+  min-width: 400px;
+}
+#c_tool_bar {
+  width: 35px;
+}
+
+#qrCode {
+  position: absolute;
+  width: fit-content;
+  top: 25px;
+  right: 25px;
+
+  #IconQrCode {
+    font-size: 1.5rem;
+  }
+}
+
+#dgQrcode.open {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  #closeDgQrcode {
+    cursor: pointer;
+  }
+}
