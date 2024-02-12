@@ -2,7 +2,8 @@
 <p>
   A simple driver made out of fun.<br/>
   This is frontend repository, see 
-  mini-driver-backend for backend.
+  mini-driver-backend for backend.<br/>
+  The tool is available in the backend repository
 </p>
 <p>
 - nodejs v18.19.0</br>
