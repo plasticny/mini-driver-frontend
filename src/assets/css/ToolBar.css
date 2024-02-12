@@ -5,16 +5,16 @@
   flex-direction: column;
   justify-content: center;
 }
-#c_tool_bar .tool_button {
+#c_tool_bar #tool_button_wrapper > *:not(:first-child) {
+  margin-top: 15px;
+}
+#c_tool_bar #tool_button_wrapper .tool_button {
   color: #a2a4bd;
   font-size: 30px;
 }
-#c_tool_bar .tool_button:hover {
+#c_tool_bar #tool_button_wrapper .tool_button:hover {
   color: aliceblue;
   cursor: pointer;
-}
-#c_tool_bar .tool_button:not(:first-child) {
-  margin-top: 15px;
 }
 
 /*# sourceMappingURL=ToolBar.css.map */

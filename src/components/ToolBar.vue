@@ -1,18 +1,20 @@
 <template>
   <div id="c_tool_bar">
-    <div @click="component_api.upload_clicked">
-      <font-awesome-icon
-        icon="file-circle-plus"
-        id="btn_upload"
-        class="tool_button"
-      />
-    </div>
-    <div v-if="is_admin_ip" @click="component_api.add_folder_clicked">
-      <font-awesome-icon
-        icon="folder-plus"
-        id="btn_add_folder"
-        class="tool_button"
-      />
+    <div id="tool_button_wrapper">
+      <div @click="component_api.upload_clicked">
+        <font-awesome-icon
+          icon="file-circle-plus"
+          id="btn_upload"
+          class="tool_button"
+        />
+      </div>
+      <div v-if="is_admin_ip" @click="component_api.add_folder_clicked">
+        <font-awesome-icon
+          icon="folder-plus"
+          id="btn_add_folder"
+          class="tool_button"
+        />
+      </div>
     </div>
 
     <!-- add folder dialog -->
