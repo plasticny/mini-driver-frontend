@@ -1,4 +1,4 @@
-# mini-driver-frontend
+# mini driver frontend
 <p>
   A simple driver made out of fun.<br/>
   This is frontend repository, see 
@@ -7,7 +7,7 @@
 <p>
 - nodejs v18.19.0</br>
 - Vue 3 (composition api)</br>
-- typescript</br>
+- typescript + lint</br>
 - scss</br>
 - jest
 </p>
@@ -23,27 +23,27 @@
 </ul>
 
 ## Commands
-Install package
+### Install package
 ```
 npm run install
 ```
 
-Run vue live reload server
+### Run vue live reload server
 ```
 npm run serve
 ```
 
-Run a live reload server to compile scss to css
+### Run a live reload server to compile scss to css
 ```
 npm run scss
 ```
 
-Run unit test
+### Run unit test
 ```
 npm run test:unit
 ```
 
-Build the project to 'dist' folder
+### Build the project to 'dist' folder
 ```
 npm run build
 ```
