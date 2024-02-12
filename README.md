@@ -1,34 +1,49 @@
 # mini-driver-frontend
+<p>
+  A simple driver made out of fun.<br/>
+  This is frontend repository, see 
+  mini-driver-backend for backend.
+</p>
+<p>
+- nodejs v18.19.0</br>
+- Vue 3 (composition api)</br>
+- typescript</br>
+- scss</br>
+- jest
+</p>
 
-## Project setup
+## Note
+<ul>
+  <li>
+    The dist folder will be the frontend_dist of the tool
+  </li>
+  <li>
+    This project use scss for the style. The scss files are stored in /src/assets/scss, and css files are compiled to /src/assets/css
+  </li>
+</ul>
+
+## Commands
+Install package
 ```
-npm install
+npm run install
 ```
 
-### Compiles and hot-reloads for development
+Run vue live reload server
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+Run a live reload server to compile scss to css
 ```
-npm run build
+npm run scss
 ```
 
-### Run your unit tests
+Run unit test
 ```
 npm run test:unit
 ```
 
-### Run your end-to-end tests
+Build the project to 'dist' folder
 ```
-npm run test:e2e
+npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
